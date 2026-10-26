@@ -1,32 +1,32 @@
 # Gabriel Barrilli
 
-**Desenvolvedor Back-end Java** · São Luís, MA · Disponível para remoto
+**Java Backend Developer** · São Luís, Brazil (UTC-3) · Open to remote and relocation
 
-Trabalho com Java e Spring Boot construindo APIs REST e microsserviços. Hoje sou Engenheiro de IA na Arrais Tertulino Advocacia, onde desenvolvo sistemas internos, automações e agentes de IA para o escritório.
+I build REST APIs and microservices with Java and Spring Boot. I currently work as an AI Engineer at a law firm (Arrais Tertulino Advocacia), building internal systems, automations and AI agents.
 
-- Bacharel em Engenharia de Software — UNDB (2026)
-- Experiência em sistemas para o setor público (SEAP-MA) e em SaaS para o mercado norte-americano, com time 100% em inglês
-- Idiomas: português (nativo), inglês (avançado), espanhol (intermediário)
+- B.Sc. in Software Engineering — UNDB (2026)
+- Experience with public-sector systems (SEAP-MA, Brazil) and with a US SaaS product, working in a 100% English-speaking team
+- Languages: Portuguese (native), English (advanced), Spanish (intermediate)
 
-## Stack
+## Tech stack
 
-| Área | Tecnologias |
+| Area | Technologies |
 | --- | --- |
-| Back-end | Java 17, Spring Boot, Spring Security + JWT, Spring Data JPA, Spring Data MongoDB, OpenFeign |
-| Bancos de dados | PostgreSQL, MongoDB |
-| Infra e DevOps | Docker, Docker Compose, GitHub Actions |
-| Front-end | React, TypeScript |
-| IA | Claude Code, agentes e automações com LLMs |
+| Backend | Java 17, Spring Boot, Spring Security + JWT, Spring Data JPA, Spring Data MongoDB, OpenFeign |
+| Databases | PostgreSQL, MongoDB |
+| DevOps | Docker, Docker Compose, GitHub Actions |
+| Frontend | React, TypeScript |
+| AI | Claude Code, LLM agents and automations |
 
-## Projetos em destaque
+## Featured project
 
-### Agendador de Tarefas — arquitetura de microsserviços
+### [Task Scheduler Platform](https://github.com/GabrielBarrilli/task-scheduler-platform) — Spring Boot microservices
 
-O usuário cadastra tarefas e recebe um e-mail de lembrete antes do horário marcado.
+Users sign up, create tasks and get an e-mail reminder before each task is due. Start at the [platform repository](https://github.com/GabrielBarrilli/task-scheduler-platform) for the architecture, how to run it and the roadmap.
 
 ```mermaid
 flowchart LR
-    C[Cliente] --> BFF[bff-agendador-tarefas]
+    C[Client] --> BFF[bff-agendador-tarefas]
     BFF --> U[usuario]
     BFF --> T[agendador-tarefas]
     BFF --> N[notificacao]
@@ -37,17 +37,17 @@ flowchart LR
     N --> SMTP[SMTP]
 ```
 
-| Serviço | Papel | Tecnologias |
+| Service | Role | Stack |
 | --- | --- | --- |
-| [usuario](https://github.com/GabrielBarrilli/usuario) | Cadastro, login com JWT, endereços e telefones; consulta de CEP no ViaCEP | Spring Boot, PostgreSQL, Docker |
-| [agendador-tarefas](https://github.com/GabrielBarrilli/agendador-tarefas) | CRUD de tarefas e busca por período | Spring Boot, MongoDB, OpenFeign |
-| [notificacao](https://github.com/GabrielBarrilli/notificacao) | Envio de e-mails com templates HTML | Spring Mail, Thymeleaf |
-| [bff-agendador-tarefas](https://github.com/GabrielBarrilli/bff-agendador-tarefas) | Backend for Frontend: porta de entrada única, documentação Swagger e job agendado que dispara os lembretes | Spring Boot, OpenFeign, Springdoc |
+| [usuario](https://github.com/GabrielBarrilli/usuario) | Sign-up, JWT login, addresses and phones, ZIP code lookup (ViaCEP) | Spring Boot, PostgreSQL, Docker |
+| [agendador-tarefas](https://github.com/GabrielBarrilli/agendador-tarefas) | Task CRUD and search by period | Spring Boot, MongoDB, OpenFeign |
+| [notificacao](https://github.com/GabrielBarrilli/notificacao) | HTML e-mails from templates | Spring Mail, Thymeleaf |
+| [bff-agendador-tarefas](https://github.com/GabrielBarrilli/bff-agendador-tarefas) | Backend for Frontend: single entry point, Swagger docs, scheduled reminder job | Spring Boot, OpenFeign, Springdoc |
 
-### [Livraria Barrilli](https://github.com/GabrielBarrilli/Desafio-Engineer-Fullstack)
+### [Barrilli Bookstore](https://github.com/GabrielBarrilli/Desafio-Engineer-Fullstack)
 
-Aplicação full stack de catálogo de livros: API REST em Spring Boot com PostgreSQL e front-end em React.
+Full-stack book catalog: Spring Boot REST API with PostgreSQL and a React frontend.
 
-## Contato
+## Contact
 
 [LinkedIn](https://www.linkedin.com/in/gabriel-barrilli) · gabrielbarrillidacruz@gmail.com
